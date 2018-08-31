@@ -11,8 +11,16 @@ namespace ClasesAbstractas
         static void Main(string[] args)
         {
             ClienteContacto cc = new ClienteContacto(1, "JUAN", "JN123", "4578963214", "1254789632", "ESCA", "45", "Rosales", "56608");
-            Console.WriteLine("ID: " + cc.idCliente.ToString()+" nombre: "+cc.nombre);
-            Console.WriteLine("Tel: "+ cc.Telefono +" CP:"+cc.Dir.cP);
+            Imprimir imp = new Imprimir();
+            try
+            {
+                imp.imprimir(cc);
+            }
+            catch (Exception e) {
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
+            }
+            imp.imprimirContacto(cc);
             Console.ReadKey();
         }
         //Polimorfismo 

@@ -47,6 +47,8 @@
     <Compile Include="ClienteNuevo.cs" />
     <Compile Include="Clientes.cs" />
     <Compile Include="Direcciones.cs" />
+    <Compile Include="Imprimir.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

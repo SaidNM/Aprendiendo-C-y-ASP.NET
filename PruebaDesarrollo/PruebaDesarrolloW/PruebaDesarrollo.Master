@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PruebaDesarrollo.Master.cs" Inherits="PruebaDesarrolloW.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Prueba Desarrollo</title>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/principal.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+           <asp:ScriptManager id="ScriptManager1" runat="Server" EnablePageMethods="true" EnableScriptGlobalization ="true" EnableScriptLocalization="true">
+        <Scripts>
+            <asp:ScriptReference Path="/js/ordenamiento.js"/>
+        </Scripts>
+        <Services>
+            <asp:ServiceReference Path="/PortalWebMethods.asmx"/>
+        </Services>
+
+
+    </asp:ScriptManager>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
